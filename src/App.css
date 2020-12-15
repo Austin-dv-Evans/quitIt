@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.quitHeading {
+  color: red;
+  font-size: 200px;
+  font-weight: bolder;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+.takeBack {
+  color: white;
+}

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import { Container, Jumbotron } from 'reactstrap'
+import Counter from './Counter'
+import bgimage from '../src/assets/quitSmoking.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Jumbotron fluid  style={{ backgroundImage: `url(${bgimage})`, backgroundPosition: "center"}}>
+          <Container fluid>
+            <>
+            <h1 className=" mb-5 quitHeading">Quit it!</h1>
+            <p className="display-5 takeBack">Take back control of your life!</p>
+            </>
+          </Container>
+        </Jumbotron>
+        <Counter />
     </div>
   );
 }
